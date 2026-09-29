@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/User';
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://oauth-ugt9.onrender.com';
 
 // Helper for standardized API requests
 async function request(endpoint, options = {}) {
