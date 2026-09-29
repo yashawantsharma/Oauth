@@ -9,6 +9,7 @@ const userRoute = require('./routes/userRoute');
 
 const app = express();
 
+
 const port = process.env.PORT || 5000
 
 app.use(cors());
@@ -21,7 +22,9 @@ mongoose.connect(process.env.MONGO_URL)
         console.log("connected to database");
     })
     .catch((err) => {
+
         console.log("error connecting to database", err)
+
     });
 
 app.use('/User', userRoute);
